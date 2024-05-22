@@ -3,7 +3,7 @@ open Filer
 
 // realiza a leitura de um arquivo
 let readFile path =
-    if System.IO.File.Exists(path) then
+    if File.Exists(path) then
         let content = File.ReadAllText(path)
         content
     else
